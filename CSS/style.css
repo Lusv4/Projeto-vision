@@ -46,18 +46,16 @@ header {
   left: 0;
 }
 
-main {
+main{
   background-color: var(--fundo);
   color: var(--principal);
-  padding-top: 128px;
+  padding-top: 64px;
   font-family: "Avenir Next LT Pro", sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 .titulo {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -65,10 +63,12 @@ main {
 .container-texto {
   flex: 1;
   min-width: 300px;
+  padding-top: 128px; 
 }
 
 #subtitulo {
   padding-bottom: 20px;
+  color: var(--detalhes-menores);
 }
 
 .btn {
@@ -94,15 +94,14 @@ main {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1640px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 350px;
 }
 
 .banner-inicial {
-  max-width: auto;
-  height: 242px;
+  max-width: 500px;
+  height: auto;
 }
 
 .container-img{
@@ -110,6 +109,9 @@ main {
   min-width: 300px;
   display: flex;
   justify-content: center;
+}
+.container-produto{
+  background-color: var(--branco);
 }
 
 
