@@ -49,8 +49,10 @@ header {
 main {
   background-color: var(--fundo);
   color: var(--principal);
-  margin-top: 64px;
+  padding-top: 128px;
   font-family: "Avenir Next LT Pro", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .titulo {
@@ -61,8 +63,8 @@ main {
 }
 
 .container-texto {
-  max-width: 768px;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 300px;
 }
 
 #subtitulo {
@@ -93,8 +95,26 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
 .banner-inicial {
-  height: 300px;
+  max-width: auto;
+  height: 242px;
+}
+
+.container-img{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .banner-inicial {
+    height: 200px;
+  }
 }
