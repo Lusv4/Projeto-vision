@@ -17,17 +17,17 @@ Alternativa:
 #FFFFFF (branco) → fundo de cards, formulários ou áreas clean.
 #000000 (preto) → texto sobre fundo claro para contraste máximo.*/
 
-:root{
-    --principal: #4169E1;
-    --ana1: #1E90FF;
-    --ana2: #4B0082;
-    --hover-botao: #1E90FF;
-    --detalhes-menores: #4B0082;
-    --comp:#FF8C00;
-    --neutra:#F5F5F5;
-    --branco:#ffffff;
-    --preto: #000000;
-    --fundo: #F5F5F5;
+:root {
+  --principal: #4169E1;
+  --ana1: #1E90FF;
+  --ana2: #4B0082;
+  --hover-botao: #1E90FF;
+  --detalhes-menores: #4B0082;
+  --comp: #FF8C00;
+  --neutra: #F5F5F5;
+  --branco: #ffffff;
+  --preto: #000000;
+  --fundo: #F5F5F5;
 }
 
 * {
@@ -35,7 +35,8 @@ Alternativa:
   margin: 0;
   padding: 0;
 }
-header{
+
+header {
   background-color: var(--principal);
   height: 64px;
   color: var(--branco);
@@ -44,13 +45,56 @@ header{
   top: 0;
   left: 0;
 }
-main{
+
+main {
   background-color: var(--fundo);
   color: var(--principal);
   margin-top: 64px;
   font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
   font-weight: bold;
 }
-.titulo{
-  margin: 84px 0px 0px 20px
+
+.container-texto {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+#subtitulo {
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: var(--comp);
+  color: var(--branco);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 1cm;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: var(--hover-botao);
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.banner-inicial {
+  height: 300px;
 }
