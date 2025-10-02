@@ -46,11 +46,22 @@ header {
   left: 0;
 }
 
-main{
+main {
   background-color: var(--fundo);
   color: var(--principal);
   padding-top: 64px;
   font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+footer {
+  background-color: #4169E1;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  font-size: 12px;
 }
 
 .titulo {
@@ -63,7 +74,7 @@ main{
 .container-texto {
   flex: 1;
   min-width: 300px;
-  padding-top: 128px; 
+  padding-top: 128px;
 }
 
 #subtitulo {
@@ -104,19 +115,55 @@ main{
   height: auto;
 }
 
-.container-img{
+.container-img {
   flex: 1;
   min-width: 300px;
   display: flex;
   justify-content: center;
 }
-.container-produto{
+
+.container-produto {
   background-color: var(--branco);
 }
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+footer h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
 
 
 @media (max-width: 768px) {
   .banner-inicial {
     height: 200px;
   }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 20px 15px;
+    text-align: center;
+  }
+
 }
