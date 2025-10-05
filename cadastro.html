@@ -11,38 +11,45 @@
 <body>
     <header>
         <div class="container-header">
-            <a href="./index.html" id="paginas">
-                <h1 id="logo">vision</h1></a>
+            <a href="./index.html" id="paginas"><h1 id="logo">vision</h1></a>
             <div class="links-href">
-                <a href="./index.html" id="active">Home</a>
+                <a href="./index.html" id="paginas">Home</a>
                 <a href="#" id="paginas">Serviço</a>
                 <a href="#" id="paginas">produtos</a>
                 <a href="Coleção.html" id="paginas">Coleção</a>
                 <a href="#" id="paginas">Contato</a>
                 <a href="./login.html" id="paginas">Login</a>
-                <a href="./cadastro.html" id="paginas">Cadastro</a>
+                <a href="./cadastro.html" id="active">Cadastro</a>
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="container-texto">
-                <div class="titulo">
-                    <h1>ÓCULOS QUE <br>COMBINAM COM <br>SEU ESTILO</h1>
-                </div>
-                <p id="subtitulo">DESIGN MODERNO, PROTEÇÃO TOTAL<br> CONTRA UV E PREÇOS JUSTOS
-                </p>
-                <div class="botoes">
-                    <a class="btn" href="./Coleção.html">Ver coleção</a>
-                    <a class="btn" href="#">Comprar agora</a>
-                </div>
-            </div>
-            <div class="container-img">
-                <img class="banner-inicial" src="./IMG/modelo-mulher-banner.png" alt="mulher modelo do banner">
-            </div>
-        </div>
-        <div class="container-produto"></div>
-    </main>
+    <!--Conteudo principal-->
+<main>
+<div class="container-login"> <!--Container principal do formulário-->
+<h2>Inscrever-se</h2>
+
+<form> <!--Inicio do formulário-->
+
+    <label for="name">Nome</label> <!--Rótulo do campo nome-->
+    <input type="name" id="name" name="name" required>
+
+    <label for="email">Email</label> <!--Rótulo do campo email-->
+    <input type="email" id="email" name="email" required> <!--Campo de entrada para o email obrigatório-->
+
+    <label for="password">Password</label> <!--Rótulo do campo senha-->
+    <input type="password" id="password" name="password" required><!--Campo de senha obrigatório-->
+
+    <button type="submit">Enviar</button> <!--Botão de login-->
+    <p>Já tem uma  conta? <a href="./login.html" id="paginas">Entrar</a></p>
+
+</form>
+</div>
+</main>
+<br>
+<br>
+<br>
+<br>
+
     <footer>
         <div>
             <h3>COMPRAR POR</h3>
