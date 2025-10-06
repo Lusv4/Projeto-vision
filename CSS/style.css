@@ -66,8 +66,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     font-size: 12px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -120,6 +118,7 @@ footer {
     gap: clamp(20px, 10vw, 350px);
     /* mínimo: 20px, ideal: 10vw, máximo: 350px */
     margin-top: 80px;
+    margin-bottom: 44px;
 }
 
 .banner-inicial {
@@ -189,6 +188,9 @@ footer a {
     text-decoration: none;
     color: var(--comp);
     border-bottom: 2px solid var(--comp);
+}
+.container-colecao{
+    margin-bottom: 109px;
 }
 
 .container-colecao h1 {
@@ -264,7 +266,7 @@ p {
     margin: 20px auto;
     display: flex;
     gap: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 160px;
 }
 
 /* Formulário de pagamento */
@@ -657,6 +659,7 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     padding: 2rem;
+    margin-bottom: 10px;
 }
 
 
