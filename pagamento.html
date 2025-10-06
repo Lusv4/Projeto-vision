@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pagamento - Vision</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <a href="./index.html" id="paginas">
+        <h1 id="logo">vision</h1>
+      </a>
+      <div class="links-href">
+        <a href="./index.html" id="paginas">Home</a>
+        <a href="Coleção.html" id="paginas">Coleção</a>
+        <a href="./login.html" id="paginas">Login</a>
+        <a href="./cadastro.html" id="paginas">Cadastro</a>
+        <a href="./entrega.html" id="paginas">Entrega</a>
+        <a href="./pagamento.html" id="active">Pagamento</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-main">
+      <section class="container-pagamento">
+        <h2>Pagamento</h2>
+
+        <div class="etapas">
+          <div><strong>1</strong> ENTREGA</div>
+          <div><strong>2</strong> PAGAMENTO</div>
+        </div>
+
+        <h3>Método de Pagamento</h3>
+
+        <div class="metodo-tabs">
+          <button class="tab-card" id="active">Cartão de Crédito</button>
+          <button class="tab-boleto">Boleto</button>
+          <button class="tab-pix">Pix</button>
+        </div>
+
+        <form class="form-pagamento">
+          <label>Número do Cartão
+            <input type="text" name="numero" placeholder="0000 0000 0000 0000" />
+          </label>
+
+          <label>Nome no Cartão
+            <input type="text" name="nome" placeholder="Nome impresso no cartão" />
+          </label>
+
+          <label>Validade
+            <input type="text" name="validade" placeholder="MM/AA" />
+          </label>
+
+          <label>Parcelas
+            <input type="text" name="parcelas" placeholder="1x" />
+          </label>
+
+          <label>CVV
+            <input type="text" name="cvv" placeholder="123" class="cvv-input" />
+          </label>
+
+          <div class="btn-finalizar-container">
+            <button type="submit" class="btn-finalizar">FINALIZAR PAGAMENTO</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="container-carrinho">
+        <h3>Resumo do Pedido</h3>
+
+        <div class="resumo-produto">
+          <img src="./IMG/Modelo Fashion.png" alt="produto">
+          <div class="produto-info">
+            <strong>WAYFARER PUFFER</strong>
+            <div>RB4340 601/87 45-23</div>
+          </div>
+        </div>
+
+        <div class="resumo">
+          <div>Subtotal</div>
+          <div>R$ 990,00</div>
+        </div>
+        <div class="resumo">
+          <div>Frete</div>
+          <div>GRATUITO</div>
+        </div>
+
+        <hr class="resumo">
+
+        <div class="total">
+          <div>TOTAL</div>
+          <div>R$ 990,00</div>
+        </div>
+
+        <div class="seguro">
+          <span>🔒</span> Pagamento 100% seguro
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <h3>COMPRAR POR</h3>
+      <a href="#">Óculos de grau</a>
+      <a href="#">Óculos de sol</a>
+      <a href="#">Todos os óculos</a>
+    </div>
+    <div>
+      <h3>COMPRAS ONLINE</h3>
+      <a href="#">Póliticas de pagamento</a>
+      <a href="#">Pólitica de garantia</a>
+      <a href="#">Pólitica de entrega</a>
+    </div>
+    <div>
+      <h3>COMO PODEMOS AJUDAR?</h3>
+      <a href="#">Ajuda</a>
+      <a href="#">Fale conosco</a>
+      <a href="#">Termos e Condiçoes</a>
+    </div>
+    <div>
+      <h3 id="social-titulo"> SIGA-NOS</h3>
+      <div class="social-icons">
+        <a href="https://pt-br.facebook.com/">
+          <img src="./img/facebook.logo.png" width="32" height="32" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./img/instagram.logo.png" width="32" height="32" alt="Instagram">
+        </a>
+        <a href="https://x.com/i/flow/login">
+          <img src="./img/twitter.logo.png" width="32" height="32" alt="Twitter">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

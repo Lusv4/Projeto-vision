@@ -25,7 +25,7 @@ Alternativa:
     --detalhes-menores: #4B0082;
     --comp: #FF8C00;
     --neutra: #F5F5F5;
-    --branco: #ffffff; 
+    --branco: #ffffff;
     --preto: #000000;
     --fundo: #F5F5F5;
 }
@@ -35,7 +35,8 @@ Alternativa:
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Avenir Next LT Pro", sans-serif;
 }
 
@@ -166,22 +167,25 @@ footer a {
     justify-content: space-between;
 }
 
-#social-titulo{
+#social-titulo {
     margin-left: 25px;
 }
 
-.links-href{
+.links-href {
     display: flex;
     gap: 20px;
 }
-#paginas{
+
+#paginas {
     text-decoration: none;
     color: var(--branco);
 }
-#paginas:hover{
+
+#paginas:hover {
     color: var(--comp);
 }
-#active{
+
+#active {
     text-decoration: none;
     color: var(--comp);
     border-bottom: 2px solid var(--comp);
@@ -197,6 +201,7 @@ footer a {
 p {
     padding: 10px;
 }
+
 .texto-colecao {
     display: flex;
     flex-direction: column;
@@ -251,6 +256,161 @@ p {
     transform: scale(1.05);
 }
 
+/* Alterações para pagamento.html */
+
+/* Containers principais */
+.container-main {
+    max-width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+/* Formulário de pagamento */
+.container-pagamento {
+    flex: 1;
+    background: var(--fundo);
+    padding: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    /* é o preto porem com transparencia*/
+}
+.metodo-tabs #active{
+    color: var(--principal);
+    border-bottom: 2px solid var(--principal);
+}
+
+.container-pagamento h2 {
+    background: var(--principal);
+    color: var(--branco);
+    padding: 12px 16px;
+    text-align: center;
+    margin: 0 0 18px 0;
+    font-size: 28px;
+}
+
+.etapas {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: var(--preto);
+    margin-bottom: 18px;
+}
+
+.metodo-tabs {
+    display: flex;
+    gap: 16px;
+    margin: 12px 0 18px 0;
+}
+
+.metodo-tabs button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    /* é o preto porem com transparencia*/
+    cursor: pointer;
+}
+
+.tab-card {
+    background: var(--fundo);
+    color: var(--principal);
+}
+
+.tab-boleto,
+.tab-pix {
+    background: transparent;
+    color: var(--ana2);
+}
+
+/* Formulário interno */
+.form-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.form-pagamento label {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pagamento input {
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    /* é o preto porem com transparencia*/
+    border-radius: 4px;
+}
+
+.cvv-input {
+    width: 160px;
+}
+
+.btn-finalizar {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    text-align: center;
+    background: var(--comp);
+    color: var(--branco);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-finalizar:hover{
+    background: var(--ana1);
+}
+
+/* Carrinho / Resumo do pedido */
+.container-carrinho {
+    width: 320px;
+    background: var(--fundo);
+    padding: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    /* é o preto porem com transparencia*/
+}
+
+.container-carrinho h3 {
+    margin-top: 0;
+}
+
+.container-carrinho img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.produto-info {
+    font-size: 12px;
+    color: var(--preto);
+}
+
+.resumo {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+hr.resumo {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+    /* é o preto porem com transparencia*/
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.seguro {
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--preto);
+}
 
 
 @media (max-width: 1300px) {
@@ -263,7 +423,8 @@ p {
         margin: 0 auto;
     }
 }
-@media (max-width: 1000px){
+
+@media (max-width: 1000px) {
     .titulo h1 {
         font-size: 2rem;
     }
@@ -292,7 +453,7 @@ p {
     .botoes {
         justify-content: center;
     }
-    
+
     .btn {
         padding: 1vw 2vw;
     }
@@ -303,7 +464,7 @@ p {
     }
 
     footer {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         padding: 20px 15px;
         text-align: center;
@@ -323,9 +484,9 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .texto-colecao{
-            font-size: 8px;     
-        }
+    .texto-colecao {
+        font-size: 8px;
+    }
 
     .card img {
         width: 180px;
@@ -334,18 +495,22 @@ p {
     @media (max-width: 484px) {
         .botoes {
             flex-direction: column;
-             width: max-content;
+            width: max-content;
             margin: 0 auto;
         }
-        .btn:first-of-type{
+
+        .btn:first-of-type {
             margin-left: 10px;
         }
+
         .card img {
             width: 150px;
         }
-        .titulo h1{
+
+        .titulo h1 {
             font-size: 1.7rem;
         }
+
         .grid-container {
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
@@ -364,111 +529,213 @@ p {
 /* Estilização do CSS do Login */
 /* Estilização do CSS do Cadastro */
 .container-login {
-    color: var(--detalhes-menores); /*Cor do texto*/
-    padding: 2rem; /*Espaçamento interno */
-    border-radius: 1rem; /*Bordas arrendondadas */
-    width: 100%; 
-    max-width: 500px; /*Largura maxima do Login */
-    align-items: center; /*Alinhamento dos itens no centro da página */
+    color: var(--detalhes-menores);
+    /*Cor do texto*/
+    padding: 2rem;
+    /*Espaçamento interno */
+    border-radius: 1rem;
+    /*Bordas arrendondadas */
+    width: 100%;
+    max-width: 500px;
+    /*Largura maxima do Login */
+    align-items: center;
+    /*Alinhamento dos itens no centro da página */
     margin: 0 auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 h2 {
-    color: var(--detalhes-menores); /* Cor do texto */
-    text-align: center;  /* Texto alinhado ao centro */
-    margin-bottom: 1.5rem; /* Espaço abaixo do titulo */
+    color: var(--detalhes-menores);
+    /* Cor do texto */
+    text-align: center;
+    /* Texto alinhado ao centro */
+    margin-bottom: 1.5rem;
+    /* Espaço abaixo do titulo */
 }
 
 
 label {
-    display:block; /* Exibe em bloco para ocupar uma linha inteira */
+    display: block;
+    /* Exibe em bloco para ocupar uma linha inteira */
     padding: 2rem;
     margin-bottom: 0.3rem;
     color: var(--detalhes-menores);
 }
 
-input, textarea  {
+input,
+textarea {
     width: 100%;
-    padding: 0.75rem; /*Espaçamento interno dos campos */
-    margin-bottom:1.5rem; /* Espaçamento entre os campos */
+    padding: 0.75rem;
+    /*Espaçamento interno dos campos */
+    margin-bottom: 1.5rem;
+    /* Espaçamento entre os campos */
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--branco); /*Cor de fundo dos campos do buttom */
-    color: var(--detalhes-menores); /*Cor de texto dentro do campo do buttom */
+    background-color: var(--branco);
+    /*Cor de fundo dos campos do buttom */
+    color: var(--detalhes-menores);
+    /*Cor de texto dentro do campo do buttom */
     font-size: 1rem;
 }
 
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     box-shadow: var(--hover-botao);
-    
+
 }
 
 button {
     width: 100%;
     padding: 0.75rem;
-    margin-bottom:2rem;
-    background-color: var(--hover-botao);
-    border:none;
+    margin-bottom: 2rem;
+    background-color: var(--comp);
+    border: none;
     border-radius: 0.5rem;
     color: var(--branco);
-    font-weight:bold;
+    font-weight: bold;
     font-size: 1rem;
+    cursor: pointer;
+}
+.container-login button:hover{
+    background: var(--hover-botao);
 }
 
 /* Responsividade do Login cadastro */
 
 @media (max-width: 400px) {
-   .container-login{
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20;
-    
-   }
-
-   input[type="email"],
-   input[type="password"],
-   buttom{
-    width: 50%;
-    padding: 10px;
-    font-size: 1rem;
-   }
-
-   @media (max-width: 768px) {
-
     .container-login {
-        padding: 1rem;
-        max-width: 90%,
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20;
+
     }
 
-    label {
-        padding: 1rem;
-        font-size: 0.9rem;
-    }
-
-    input, textarea, buttom {
+    input[type="email"],
+    input[type="password"],
+    buttom {
+        width: 50%;
+        padding: 10px;
         font-size: 1rem;
-       
     }
 
-    .container-header{
-        flex-direction: column;
-        align-items: center;
-    }
-    .links-href {
-        flex-direction: column;
-        text-align: center;
+    @media (max-width: 768px) {
 
         .container-login {
-            padding: 10px;
+            padding: 1rem;
+            max-width: 90%,
+        }
+
+        label {
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        input,
+        textarea,
+        buttom {
+            font-size: 1rem;
+
         }
     }
-   }
+}
+
+/* Estilização do CSS da pagina entrega */
+/*Estilização das paginas do Gabriel Souza */
+
+
+.container-login {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+
+.container-checkout {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.checkout-pedido {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pedido {
+    font-weight: bold;
+    color: gray;
+}
+
+.pedido.active {
+    color: var(--preto);
+    border-bottom: 2px solid black;
+}
+
+.form-pedido {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-pedido label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.form-pedido input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-pedido buttom {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--preto);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-entrega {
+    flex: 1 1 40%;
+    background-color: var(--fundo);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.container-entrega h3 {
+    margin-bottom: 1rem;
+}
+
+.container-entrega p {
+    margin: 0.5rem 0;
+}
+
+.login-entrega {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container-login {
+        flex-direction: column;
+    }   
+
+    .container-entrega {
+        margin-top: 2rem;
+    }
 }

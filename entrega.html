@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Vision</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <a href="./index.html" id="paginas">
+                <h1 id="logo">vision</h1>
+            </a>
+            <div class="links-href">
+                <a href="./index.html" id="paginas">Home</a>
+                <a href="Coleção.html" id="paginas">Coleção</a>
+                <a href="./login.html" id="paginas">Login</a>
+                <a href="./cadastro.html" id="paginas">Cadastro</a>
+                <a href="./entrega.html" id="active">Entrega</a>
+                <a href="./pagamento.html" id="paginas">Pagamento</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="login-entrega">
+            <div class="container-login"> <!--Container principal do formulário-->
+                <h2>Inscrever-se</h2>
+
+                <form> <!--Inicio do formulário-->
+
+                    <label for="name">Nome</label> <!--Rótulo do campo nome-->
+                    <input type="name" id="name" name="name" required>
+
+                    <label for="sobrenome">Sobrenome</label> <!--Rótulo do campo sobrenome-->
+                    <input type="sobrenome" id="sobrenome" name="sobrenome"
+                        required><!--Campo de sobrenome obrigatório-->
+
+                    <label for="cpf *">CPF</label> <!--Rótulo do campo cpf-->
+                    <input type="cpf" id="cpf" name="cpf" required>
+
+                    <label for="email">Email</label> <!--Rótulo do campo email-->
+                    <input type="email" id="email" name="email" required>
+                    <!--Campo de entrada para o email obrigatório-->
+
+
+                    <label for="telefone">Telefone</label> <!--Rótulo do campo telefone-->
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="endereço">Endereço</label> <!--Rótulo do campo endereço-->
+                    <input type="endereço" id="endereço" name="endereço" required>
+
+                    <label for="cidade">Cidade</label> <!--Rótulo do campo cidade-->
+                    <input type="cidade" id="cidade" name="cidade" required>
+
+                    <label for="estado">Estado</label> <!--Rótulo do campo estado-->
+                    <input type="estado" id="estado" name="estado" required>
+
+                    <label for="cep *">CEP *</label> <!--Rótulo do campo cep-->
+                    <input type="cep" id="cep" name="cep" required>
+
+                    <button type="submit">Próxima Etapa</button> <!--Botão de finalizar -->
+
+                </form>
+            </div>
+
+            <!--Conteudo da pagina de entega resumo pedido-->
+            <div class="container-entrega">
+                <div class="resumo-pedido">
+                    <h3>RESUMO PEDIDO</h3>
+                    <p>Subtotal: <strong>R$ 990,00</strong></p>
+                    <p>Valor do Frete: <strong>GRATUITO</strong></p>
+                    <p>Total: <strong>R$ 990,00</strong></p>
+                </div>
+
+                <!--Conteudo do carrinho pedido-->
+                <div class="container-carrinho">
+                    <h3>SEU CARRINHO</h3>
+                    <p>WAYFARER PUFFER</p>
+                    <img src="./IMG/Modelo Fashion.png">
+                    <p>R$ 990,00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+
+</html>
